@@ -1,0 +1,162 @@
+'use strict';
+
+/** @type {import('sequelize-cli').Migration} */
+module.exports = {
+  async up (queryInterface, Sequelize) {
+    await queryInterface.bulkInsert('ProfessoresMateriasClasses', [
+      {
+        "profId":1,
+        "classId":1,
+        "grauId":1,
+       "cA":true,
+        "cB":true,
+        "cC":true,
+        "cD":false,
+        "cE":false,
+        "cF":false,
+      },
+      {
+        "profId":1,
+        "classId":2,
+        "grauId":2,
+        "cA":true,
+        "cB":true,
+        "cC":true,
+        "cD":false,
+        "cE":false,
+        "cF":false,
+      },
+      {
+        "profId":2,
+        "classId":1,
+        "grauId":9,
+        "cA":true,
+        "cB":false,
+        "cC":false,
+        "cD":false,
+        "cE":false,
+        "cF":false,
+      },
+      {
+        "profId":2,
+        "classId":1,
+        "grauId":8,
+        "cA":true,
+        "cB":false,
+        "cC":false,
+        "cD":false,
+        "cE":false,
+        "cF":false,
+      },
+      {
+        "profId":3,
+        "classId":1,
+        "grauId":10,
+        "cA":true,
+        "cB":false,
+        "cC":false,
+        "cD":false,
+        "cE":false,
+        "cF":false,
+      },
+      {
+        "profId":3,
+        "classId":1,
+        "grauId":8,
+        "cA":true,
+        "cB":false,
+        "cC":false,
+        "cD":false,
+        "cE":false,
+        "cF":false,
+      },
+      {
+        "profId":3,
+        "classId":1,
+        "grauId":6,
+        "cA":true,
+        "cB":false,
+        "cC":false,
+        "cD":false,
+        "cE":false,
+        "cF":false,
+      },
+      {
+        "profId":3,
+        "classId":1,
+        "grauId":4,
+        "cA":true,
+        "cB":false,
+        "cC":false,
+        "cD":false,
+        "cE":false,
+        "cF":false,
+      },
+      {
+        "classId":1,
+         "profId":4,
+       "grauId":1,
+        "cA":true,
+        "cB":false,
+        "cC":false,
+        "cD":false,
+        "cE":false,
+        "cF":false,
+      },
+      {
+        "classId":1,
+         "profId":4,
+       "grauId":2,
+        "cA":true,
+        "cB":false,
+        "cC":false,
+        "cD":false,
+        "cE":false,
+        "cF":false,
+      },
+      {
+        "classId":1,
+         "profId":4,
+       "grauId":3,
+        "cA":true,
+        "cB":false,
+        "cC":false,
+        "cD":false,
+        "cE":false,
+        "cF":false,
+      },
+      {
+        "classId":1,
+         "profId":4,
+       "grauId":4,
+        "cA":true,
+        "cB":false,
+        "cC":false,
+        "cD":false,
+        "cE":false,
+        "cF":false,
+      },      {
+        "classId":1,
+         "profId":4,
+       "grauId":5,
+        "cA":true,
+        "cB":false,
+        "cC":false,
+        "cD":false,
+        "cE":false,
+        "cF":false,
+      },
+    ], {});
+  },
+
+
+  async down (queryInterface, Sequelize) {
+    await queryInterface.bulkDelete('ProfessoresMateriasClasses', null, {});
+    /**
+     * Add commands to revert seed here.
+     *
+     * Example:
+     * await queryInterface.bulkDelete('People', null, {});
+     */
+  }
+};
